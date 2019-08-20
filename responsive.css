@@ -1,0 +1,17 @@
+@media (max-width: 670px ){
+	.toDo-list__section{
+		width: 100%;
+		text-align: center;
+
+
+	}
+	.main-love__pure{
+  background: #60C0E0;
+  height: auto;
+  padding: 30px 0px 40px;
+  color: snow;
+	}
+	footer{
+		text-align: center;
+	}
+}
