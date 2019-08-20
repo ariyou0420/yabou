@@ -83,7 +83,7 @@ font-family: 'HanziPen TC', sans-serif;
   position: relative;
   height: 900px;
   background: center center no-repeat;
-  background-image: url(../img/8977f2dae48bcd67b37cbdfc4e4e7ba4_m.jpg);
+  background-image: url(8977f2dae48bcd67b37cbdfc4e4e7ba4_m.jpg);
   background-size: cover;
 }
 
@@ -173,19 +173,19 @@ font-family: 'HanziPen TC', sans-serif;
 }
 
 .intro-section__block:nth-child(1) .intro-section__img-area {
-  background-image: url("../img/7c2e59ec5315f0f548dfd50882e786aa_s.jpg");
+  background-image: url("7c2e59ec5315f0f548dfd50882e786aa_s.jpg");
 }
 
 .intro-section__block:nth-child(2) .intro-section__img-area {
-  background-image: url("../img/couple-731890_640.jpg");
+  background-image: url("couple-731890_640.jpg");
 }
 
 .intro-section__block:nth-child(3) .intro-section__img-area {
-  background-image: url("../img/72a286d81c190411a8dfc245357f9c72_s.jpg");
+  background-image: url("72a286d81c190411a8dfc245357f9c72_s.jpg");
 }
 
 .intro-section__block:nth-child(4) .intro-section__img-area {
-  background-image: url("../img/a16d7729250c0edb06ea518977fc5d75_s.jpg");
+  background-image: url("a16d7729250c0edb06ea518977fc5d75_s.jpg");
 }
 
 .intro-section__img-area {
