@@ -1,275 +1,675 @@
-<!DOCTYPE html> 
-<html lang="ja">
- <head> <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <!-- <meta name="viewport" content="width=1024" /> -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <link rel="stylesheet" type="text/css" href="css/reset.css">
-  <link rel="stylesheet" type="text/css" href="css/arrange.css">
-  <link rel="stylesheet" type="text/css" href="css/responsive.css">
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script type="text/javascript" src="js/arrange.js"></script> 
-  <title>2020年の軌跡</title>
-   </head> 
+#wrapper {
+  width:100%;
+  overflow:hidden;
+}
 
-   <body>
-    <div id="wrapper">
-    <header class="page-header">
-      <div class="page-header--inr inr">
-      <h1 id="page-header--logo">明日への軌跡</h1>
-      <div class="page-header--list">
-        <ul>
-          <li><a href="">Profile</a></li>
-          <li><a href="https://www.pixiv.net/novel/member.php?id=42793608">Novel</a></li>
-          <li>Target</li>
-        </ul>
-      </div>
-    </header> 
+header{
+  position:fixed;
+top:0;
+left:0;
+z-index:24;
+width:100%;
+}
 
-    <main class="main-content"> 
-      <div class="main-visual">
-        <h2 class="main-visual--ttl">今、小さな町から 大きな一歩を踏み出します。</h2>
-      </div>
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3480BD;
+  color: snow;
+}
 
-    <section class="intro-section">
-        <div class="intro-section--header section-header">
-          <h3 class="section-header--ttl">2020年７月までに達成したい目標</h3>
-        </div>
+#page-header--logo{
+  cursor: pointer;
 
-      <nav class="intro-section__nav">
-        <div class="inr">
-          <ol>
-            <li>
-              <a href="#main-pro">1.プログラミング</a>
-            </li>
-            <li>
-              <a href="#main-love">2.人間関係</a>
-            </li>
-            <li>
-              <a href="#content3">3.旅の記録</a>
-            </li>
-          </ol>
-        </div>
-      </nav>
+font-family: 'HanziPen TC', sans-serif;
+}
 
-      <div class="intro-section__content">
-        <div class="intro-section__block" id="content1">
-          <div class="intro-section__img-area"></div>
-          <div class="intro-section__txt-area">
-            <h4 id="pro">1.プログラミングを勉強して、月40万を安定して稼ぐ！</h4>
-            <p>挫折しないように少しずつ一歩に進もう。</p>
-            <p>まずは月に3万円稼ぐこと。</p>
-            <p>それまでは辛くても進もう。きっと楽しくなってくるときがやってくる。</p>
-            <p>仕事が終わったらすぐパソコンの前に座り、ボドモーロに従う。</p>
-          </div>
-        </div>
-        <div class="intro-section__block" id="content2">
-          <div class="intro-section__img-area"></div>
-          <div class="intro-section__txt-area">
-            <h4 id="sex">2.彼女を作る</h4>
-            <p>ターゲットは二人。彼女たちと隣に並んで恥ずかしくない男になる。</p>
-            <p>容姿を整え、意識を変える。ポジティブな心で彼女を観察する</p> 
-            <p>案件をクリアしたら彼女たちに接触。恥も外聞も脱ぎ捨て、恥まみれの人生を送る。</p>
-            <p>そうでなければ、彼女を作るという目的は達成できない。</p>
-            <p>練習場所はすべての場所だ。</p>  
-          </div>
-        </div>
-        <div class="intro-section__block" id="content3">
-          <div class="intro-section__img-area"></div>
-          <div class="intro-section__txt-area">
-            <h4 id="write">3.小説家になる</h4>
-            <p>頭の中の物語をすべて吐き出すまで死んでも死にきれない。異能バトル、ラブコメ、恋愛、ミステリー、ファンタジーなど様々なジャンルの作品を描く。</p>
-          </div>
-        </div>
-        <div class="intro-section__block" id="content4">
-          <div class="intro-section__img-area"></div>
-          <div class="intro-section__txt-area">
-            <h4 id="travel">4.旅をする</h4>
-            <p>子供の頃の夢を叶えたい。津々浦々。自転車かバイクが現実的。車は楽すぎて、徒歩はきつすぎる。</p>
-          </div>
-        </div>
-      </div>
+.page-header--list ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-      <!-- <div class="intro-section__contact">
-        <div class="inr">
-          <div class="contact-block">
-            <p class="contact-block__txt">TEL 00-0000-0000<span>（受付時間 平日9:00〜17:00）</span></p>
-            <a class="contact-block__btn" href="">問い合わせボタン</a>
-          </div>
-        </div>
-      </div> -->
+.page-header--list li{
+	padding: 20px;
+}
 
-    <div id="main-pro">
-      <h2 class="main-pro__ttl">月に３万稼げるようになるまでの軌跡</h2>
-      <div class="main-pro__contant">
-        <div class="pro-study">
-            <img src="img/7c2e59ec5315f0f548dfd50882e786aa_s.jpg" width="400" height="250">
-            <div class="textbox">
-              <p>ProgateでHTML/CSS jQuery PHPを学習。</p>
-                <p>二週は必ずこなし、完璧主義にしない</p>
-            </div>
-        </div>
-        <div class="pro-study">
-            <img src="img/7c2e59ec5315f0f548dfd50882e786aa_s.jpg" width="400" height="250">
-            <div class="textbox">
-              <p>WordPressのレッスン本で勉強。</p>
-             <p> 開発環境を整える</p>
-            </div>
-        </div>
-        <div class="pro-study">
-            <img src="img/7c2e59ec5315f0f548dfd50882e786aa_s.jpg" width="400" height="250">
-            <div class="textbox">
-              <p>LPページの模写とレスポンシブ対応</p>
-              <p>５つのサイトをそれぞれ７割位の完成度で行う</p> 
-            </div>
-        </div>
-        <div class="pro-study">
-            <img src="img/7c2e59ec5315f0f548dfd50882e786aa_s.jpg" width="400" height="250">
-            <div class="textbox">
-              <p>フォトショップで画像の書き出しを行えるようになる</p>
-              <p>デザインのタイプを知っておく</p>
-            </div>
-        </div>
-        <div class="pro-study">
-            <img src="img/7c2e59ec5315f0f548dfd50882e786aa_s.jpg" width="400" height="250">
-            <div class="textbox">
-              <p>ここあたりでポートフォリオの作成。isaraと自分の自己紹介サイトに加え、デザイン特化したLPを公開する</p>
-            </div>
-        </div>
-        <div class="pro-study">
-            <img src="img/7c2e59ec5315f0f548dfd50882e786aa_s.jpg" width="400" height="250">
-            <div class="textbox">
-              <p>クラウドソーシングサービスで案件を受注する。</p>
-                <p>わからないところはメンターに頼りしていい</p>
-            </div>
-        </div>
-      </div>      
-    </div>
+/*----------------------------------------
+| page
+----------------------------------------*/
+.inr {
+  width: 960px;
+  margin: 0 auto;
+}
 
-    <div id="main-love">
-     <div class="container"> 
-      <h2 class="main-love__ttl">気になるあの娘と知り合いレベルになるまでの軌跡</h2>
-      <div class="main-love__pure">
-        <div class="love-pure__goal">
-          <h3 id="farstStep">女の子とたくさん知り合い、そして彼女を作る！</h3>
-          <img src="">
-        </div>
-         <div class="main-love__toDo">
-          <h4>そのために日々欠かさずやっておくこと一覧</h4>
-            <div class="toDo-list__section">
-              <img src="img/shinjyuku-alta20140921230347_TP_V.jpg" width="500" height="300">
-              <div class="toDo-list__txt">
-              <p>毎日身だしなみに気を使う！</p>
-              <p>彼女たちがいる日は髪型をセットし、髭を剃り無駄をく！</p>
-              <p>そして堂々とはきはきの態度で接する。</p>
-              </div>
-              
-            </div>
-            <div class="toDo-list__section">
+/*----------------------------------------
+| page-header
+----------------------------------------*/
 
-              <img src="img/barber-4019672_640.jpg" width="500" height="300">
-              <div class="toDo-list__txt">
-                <p>2〜3週間に一度は美容院へ赴く。</p>
-                <p>ファッションにも気を使い、常に自分を見せつけるつもりで生きていく。</p>
-                <p>表情を見ることは相手を見ること</p>
-              </div> 
-            </div>
-            <div class="toDo-list__section">
-              <img src="img/man-2037255_640.jpg" width="500" height="300">
-              <div class="toDo-list__txt">
-                <p>筋トレをして体を引き締める</p>
-                <p>３日行い、一日休憩。30分以上は必ず行うこと</p>
-                <p>テストステロンも出て一石三鳥</p>
-              </div>   
-            </div>
-            <div class="clear"> </div>
-          </div>
-                
-      　　</div>       
-      </div>
+/* 横並びのスタイルをinrクラスに付け替える */
+.page-header--inr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-      <div id="pure-while-adult">
-        <div class="pure-attention">
-          <p>※この先、アダルトな内容が多分に含まれています。</p> 
-          <p>18歳未満の方は、決してこの先をスクロールしないでください</p>
-        </div>
-        <p class="adult-attention">ここまで来てくれた貴方。ようこそ、私の欲望の世界へ――。</p>
-       </div> 
-        
-        <div class="adult-contant">
-          <div class="adult-contant__box">
-            <div class="adult-contant__text">
-              <h3>セフレが欲しい</h3>
-              <p>ターゲットはmtmy ymとktgi skr</p>
-              <p>彼女たちに自分の存在を認識させる方法は、今のところはヘタレなりにやるしかない。</p>
-              <p>まずははっきりとした挨拶と、完璧な身だしなみを常に身にまとう。</p>
-              <p>曜日は火、水、土、日限定。ほぼ毎日必ず出会う。笑みを浮かべ（それでも欲を出さない程度に）朗らかな印象を植え付ける。</p>
-              <br>
-              <p></p>
-            </div>
-            <div class="pict"><img src="img/love-3581038_640.jpg" alt=""></div>
-          </div>
+.container{
 
-          <div class="adult-contant__box">
-            <div class="adult-contant__text">
-              <h3>Mtmy ymとKtgi skrと３Pがしたい！</h3>
-              <p>ラブホのきれいな部屋で頭の中以上のエロいことがしたい。</p>
-              <p>俺はそのためだけに生きている</p>
-            </div>
-            <div class="pict"><img src="img/229_jk02_cg_comn03ki.png" alt=""></div>
-          </div>
-
-          <div class="adult-contant__box">
-            <div class="adult-contant__text">
-              <h3>ヤリマンを集めて乱交パーティーを開く</h3>
-              <p>酒池肉林、狂い咲き</p>
-            </div>
-            <div class="pict"><img src="img/296_jk02_cg_comn10e.png" alt=""></div>
-          </div>
-
-          <div class="adult-contant__box">
-            <div class="adult-contant__text">
-              <h3>たくさんのセフレが欲しい</h3>
-              <p>村主恵美子みたいなドMビッチやギャルビッチとセフレ関係を結ぶ！</p>
-            </div>
-            <div class="pict"><img src="img/0242_cg18_06.png" alt=""></div>
-          </div>
-      </div>
-
-    </div>
-  </div>  
-
-<!-- SAMPLE -->
+  width: 100%;
+  margin: 0 auto;
+}
 
 
+.page-header--inr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-<!-- SAMPLE修了 -->
+
+.page-footer { 
+  padding: 40px 0; 
+  background-color: #3480BD; 
+  color: snow;
+  } 
+
+.page-footer small { 
+  font-size: 1.2rem; 
+}
+
+
+.main-visual {
+  position: relative;
+  height: 900px;
+  background: center center no-repeat;
+  background-image: url(../img/8977f2dae48bcd67b37cbdfc4e4e7ba4_m.jpg);
+  background-size: cover;
+}
+
+.main-visual--ttl {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  writing-mode: vertical-rl;
+  color: #fff;
+  font-weight: normal;
+  font-size: 60px;
+  font-family:fantasy; /*"YuGothic", "游ゴシック";*/
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+/*  .vertical1 {
+  
+  font-size: 60px;
+  font-weight: 50px;
+  float:left;
+  padding: 210px 0px 0px 80px;
+  font-family: fantasy;
+
+}*/
+
+.section-header { 
+  position: relative; 
+  padding: 30px 0; 
+  text-align: center; 
+  background: gray;
+}
+
+.section-header--ttl {
+ color: #fff;
+ font-weight: normal; 
+ font-size: 30px; 
+ } 
+
+ .intro-section--header {
+  margin-bottom: 100px;
+   }
+
+
+ .intro-section__nav {
+  padding: 88px 0 80px;
+}
+
+.intro-section__nav ol {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro-section__nav ol li {
+  position: relative;
+}
+
+.intro-section__nav ol li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 230px;
+  height: 230px;
+  padding: 0 25px;
+  color: #000;
+  font-size: 25px;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+
+/*左右交互並び*/
+
+.intro-section__block {
+  display: flex;
+  height: 400px;
+}
+
+.intro-section__block > * {
+  width: 50%;
+}
+
+
+.intro-section__block:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.intro-section__block:nth-child(1) .intro-section__img-area {
+  background-image: url("../img/7c2e59ec5315f0f548dfd50882e786aa_s.jpg");
+}
+
+.intro-section__block:nth-child(2) .intro-section__img-area {
+  background-image: url("../img/couple-731890_640.jpg");
+}
+
+.intro-section__block:nth-child(3) .intro-section__img-area {
+  background-image: url("../img/72a286d81c190411a8dfc245357f9c72_s.jpg");
+}
+
+.intro-section__block:nth-child(4) .intro-section__img-area {
+  background-image: url("../img/a16d7729250c0edb06ea518977fc5d75_s.jpg");
+}
+
+.intro-section__img-area {
+  background: center center no-repeat;
+  background-size: cover;
+}
+
+.intro-section__txt-area {
+  box-sizing: border-box;
+  color: snow;
+  background-color: gray;
+}
+
+.intro-section__txt-area h4 {
+  font-size: 1.8rem;
+}
+
+.intro-section__txt-area p {
+  font-size: 1.6rem;
+}  
+
+.intro-section__contact {
+  padding: 100px 0;
+}
+
+
+.contact-form {
+  text-align:center;
+  height: 500px;
+  margin-top: 50px
+
+}
+
+.contact-submit {
+  float: bottom;
+  background-color: #dee7ec;
+  color: #889eab;
+
+}
+
+input,textarea {
+  width: 300px;
+  margin: 10px 20px;
+  font-size: 18px;
+  padding: 10px;
+}
+
+#main-pro {
+  background: #fff;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+ .main-pro__ttl{
+  font-size: 35px;
+  font-weight: bold;
+  color: orange;
+  margin-top: 50px;
+  border-bottom: dashed 2px orange;
+  display: inline-block;
+
+
+}
+
+.main-pro__contant{
+  display: flex;
+   justify-content: space-around;
+    align-items: center; 
+     flex-wrap: wrap; 
+     align-content: center; 
+  margin-top: 50px;
+}
+
+.textbox{
+  margin: 20px 0 30px;
+  width: 400px;
+}
+
+#main-love {
+  margin-top: 50px;
+}
+
+.main-love__ttl{
+  text-align: center;
+  padding: 10px 0px 10px;
+  color: orange;
+  font-family: fantasy;
+}
+
+
+.main-love__pure{
+  background: #60C0E0;
+  height: 540px;
+  padding: 30px 0px 40px;
+  color: snow;
+
+}
+
+.clear{
+
+}
+
+
+.main-love__adult{
+  background: black;
+  color: snow;
+  padding: 30px 0 20px;
+}
+
+#pure-while-adult{
+  margin-top: 100px;
+  background: black;
+
+
+}
+
+#farstStep{
+  text-align: center;
+}
+
+.main-love__toDo h4{
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.toDo-list__section{
+  float: left;
+  width: 30%;
+  padding-bottom: 40px;
+  padding-right: 40px;
+}
+
+
+.toDo-list__section img{
+  border-radius: 40%;
+  margin-right: 20px;
+
+}
+
+.toDo-list__txt{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.pure-attention{
+  line-height: 60px;
+  font-size: 30px;
+  color: red;
+  font-weight: bold;
+  padding: 50px 0px 50px;
+  text-align: center;
+
+}
+
+.adult-attention{
+  font-size: 40px;
+  font-weight: bold;
+  color: pink;
+  text-align: center;
+  padding: 1300px 0px 0px;
+
+}
+
+
+
+.adult-contant{
+  background-color: black;
+  padding-top: 40px;
+}
+
+
+.adult-contants{
+  display: flex;
+ flex-direction: row;
+  justify-content: space-between;
+ 
+}
+
+
+.adult-contant__txt{
+  font-size: 15px;
+  color: pink;
+}
+
+.adult-contant__img{
+  width: 30%;
+}
+
+.adult-contant:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.adult-contant:nth-child(even) .adult-contant__txt {
+  text-align: right;
+}
+.adult-contant:nth-child(even) .adult-contant__img {
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+
+
+/*.contact-form {
+  text-align:center;
+  height: 500px;
+  margin-top: 50px
+
+}
+
+.contact-submit {
+  float: bottom;
+  background-color: #dee7ec;
+  color: #889eab;
+
+}
+
+input,textarea {
+  width: 300px;
+  margin: 10px 20px;
+  font-size: 18px;
+  padding: 10px;
+}*/
+
+/*.contact-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 55px;
+  background: gray;
+}
+
+.contact-block__txt {
+  font-size: 2rem;
+}
+
+.contact-block__txt span {
+  display: block;
+  font-size: 1.6rem;
+}
+
+.contact-block__btn {
+  width: 370px;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  background: red;
+}
+*/
+
+
+/*
+.page-header {
+  padding: 17px 0;
+}*/
+
+
+/*.page-header-info__txt {
+  margin-right: 30px;
+}*/
+
+/*.page-header_info__btn {
+  background-color: #ff0600;
+  color: #fff;
+}*/
+
+/*
+.page-header-info__txt {
+  margin-right: 30px;
+}*/
+
+/* 縦並び 
+/*.page-header-info__txt span {
+  display: block;
+  font-size: 1.4rem;
+}
+
+.page-header-info__btn {
+  min-width: 155px;*/
+
+  /* (height - (fontSize * lineHeight)) / 2 */
+/*  padding: calc((50px - (1.6rem * 1.5)) / 2) 0;
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+  background-color: #ff0600;
+}*/
+
+
+.section-header {
+  position: relative;
+  padding: calc((87px - (30px * 1.6)) / 2) 0;
+  text-align: center;
+  background: #aaa;
+}
+
+.section-header__ttl {
+  color: #fff;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.section-header:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-color: #aaa transparent transparent transparent;
+  border-style: solid;
+  border-width: 28px 28px 0;
+  transform: translate(-50%, 100%);
+  content: "";
+}
+
+.intro-section__nav {
+  padding: 88px 0 80px;
+}
+
+.intro-section__nav ol {
+  display: flex;
+  justify-content: space-between;
+  width: 810px;
+  margin: 0 auto;
+}
+
+.intro-section__nav ol li {
+  position: relative;
+}
+
+/* ナビゲーション内の矢印 */
+.intro-section__nav ol li:after {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: translateX(-50%) rotate(45deg);
+  content: "";
+}
+
+.intro-section__nav ol li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 230px;
+  height: 230px;
+  padding: 0 25px;
+  color: #000;
+  font-size: 25px;
+  line-height: 1.2;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+
+/* 文章エリア */
+/*.intro-section__txt-area {
+  box-sizing: border-box;
+  padding: 30px 20px;
+  color: #fff;
+  background-color: #aaa;
+}
+*/
+/* タイトル */
+/*.intro-section__txt-area h4 {
+  margin-bottom: 24px;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 1.5;
+}*/
+
+/* 文章 */
+.intro-section__txt-area p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+
+.intro-section__contact {
+  padding: 100px 0;
+}
+
+/*.contact-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 55px 40px 147px;
+  background: #aaa;
+}
+
+.contact-block__txt {
+  font-size: 2.2rem;
+}
+
+.contact-block__txt span {
+  display: block;
+  font-size: 1.4rem;
+}
+
+.contact-block__btn {
+  width: 370px;
+  padding: calc((83px - (2.2rem * 1.6)) / 2) 0;
+  color: #fff;
+  font-size: 2.2rem;
+  text-align: center;
+  background: red;
+}*/
+
+/*.page-footer {
+  padding: 40px 0;
+  background-color: #aaa;
+}*/
+
+.page-footer small {
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+
+/*SAMPLE*/
+
+
+.adult-contant__box {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.adult-contant__text {
+  color: pink;
+}
+
+h3 {
+  font-size: 21px;
+  margin: 0;
+}
+
+.pict {
+  width: 50%;
+  margin-left: 3%;
+}
+
+.pict img {
+  width: 100%;
+  height:auto;
+}
+
+.adult-contant__box:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.adult-contant__box:nth-child(even) .text {
+  text-align: right;
+}
+.adult-contant__box:nth-child(even) .pict {
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+
+ .pict {
+  opacity: 0;
+  transform : translate(0, 50px);
+  transition : all 1500ms;
+}
+
+.pict.scrollin{
+  opacity: 1;
+  transform: translate(0, 0);
+}
 
 
 
 
-    <div class="contact-form">
-    <h3 class="section-title">お問い合わせ</h3>
 
-    <p>メールアドレス（必須）</p>
-    <input>
-        <p>お問い合わせ内容（必須）</p>
-        <textarea></textarea>
-        <p>※必須項目は必ずご入力ください</p>
-        <input class="contact-submit" type="submit" value="送信">
-        
-    </div>
 
-    </section>
-   </main> 
-   
-    <footer class="page-footer"> 
-      <div class="inr">
-        <p><small>© Project Raison</small></p>
-      </div>
-    </footer>
-   </div>
-   </body> 
 
- </html>
+
+
+
+
+
